@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="side" id="side1"></div>
+      <div class="side" id="side2"></div>
+    </section>
+    <div class="contentBx">
+      <h2>Viver na sombra da propria loucura</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+        ipsum, atque rerum in at eaque dignissimos veniam ea delectus adipisci
+        molestias officia ipsam sint amet consequatur et itaque provident vel.
+      </p>
+    </div>
+    <script>
+      var side1 = document.getElementById("side1");
+      window.addEventListener("scroll", function () {
+        side1.style.left = -window.pageYOffset + "px";
+      });
+      var side2 = document.getElementById("side2");
+      window.addEventListener("scroll", function () {
+        side2.style.left = window.pageYOffset + "px";
+      });
+    </script>
+  </body>
+</html>
+
+<!-- https://bennettfeely.com/clippy/ -->

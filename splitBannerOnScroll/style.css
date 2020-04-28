@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+body {
+  min-height: 250vh;
+}
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+section .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(people.webp);
+
+  background-size: cover;
+}
+
+section .side#side1 {
+  clip-path: polygon(
+    20% 0,
+    0 0,
+    40% 50%,
+    0 100%,
+    20% 100%,
+    50% 60%,
+    80% 100%,
+    100% 100%,
+    60% 50%,
+    100% 0,
+    80% 0,
+    50% 40%
+  );
+}
+section .side#side2 {
+  clip-path: polygon(
+    100% 0,
+    73% 0,
+    69% 33%,
+    29% 55%,
+    20% 60%,
+    37% 79%,
+    13% 86%,
+    91% 100%,
+    100% 100%
+  );
+}
+
+.contentBx {
+  background: #000;
+  color: #fff;
+  padding: 100px;
+  padding-top: 220vh;
+}
+.contentBx h2 {
+  position: relative;
+  font-size: 4em;
+}
+
+.contentBx p {
+  position: relative;
+  font-size: 1.2em;
+}
